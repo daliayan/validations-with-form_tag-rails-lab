@@ -1,9 +1,9 @@
-<h2>Create an Author</h2>
+<h2>Create Author</h2>
 
 <%= form_tag authors_path, method: "post" do %>
   <% if @author.errors.any? %>
     <div id="error_explanation">
-      <h3>There were some errors:</h3>
+      <h3>There were errors:</h3>
       <ul>
         <% @author.errors.full_messages.each do |message| %>
           <li><%= message %></li>
